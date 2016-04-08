@@ -5,13 +5,10 @@
  */
 package Models;
 
-/**
- *
- * @author AliRafael
- */
+
 public class Material {
     
-    private String nombre;
+
     private int volumen;
     private String presentacion;
     private int peso;
@@ -20,20 +17,13 @@ public class Material {
     public Material() {
     }
 
-    public Material(String nombre, int volumen, String presentacion, int peso) {
-        this.nombre = nombre;
+    public Material(int volumen, String presentacion, int peso) {
+
         this.volumen = volumen;
         this.presentacion = presentacion;
         this.peso = peso;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
 
     public int getVolumen() {
         return volumen;

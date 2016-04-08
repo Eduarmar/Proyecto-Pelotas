@@ -5,18 +5,17 @@
  */
 package Models;
 
-/**
- *
- * @author AliRafael
- */
 public class Medida {
     
     private float cm;
     private Forma aspecto;
 
-    public Medida() {
+    public Medida(float cm, Forma aspecto) {
+        this.cm = cm;
+        this.aspecto = aspecto;
     }
 
+    
     public float getCm() {
         return cm;
     }

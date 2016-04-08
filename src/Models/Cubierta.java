@@ -5,18 +5,30 @@
  */
 package Models;
 
-/**
- *
- * @author AliRafael
- */
+
 public class Cubierta {
     
+    private String Nombre;
     private Material tipo;
     private Textura acabado;
 
     public Cubierta() {
     }
 
+    public Cubierta(String Nombre, Material tipo, Textura acabado) {
+        this.Nombre = Nombre;
+        this.tipo = tipo;
+        this.acabado = acabado;
+    }
+
+     public String getNombre() {
+        return Nombre;
+    }
+
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
+    }
+    
     public Material getTipo() {
         return tipo;
     }

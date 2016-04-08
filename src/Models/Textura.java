@@ -5,32 +5,21 @@
  */
 package Models;
 
-/**
- *
- * @author AliRafael
- */
+
 public class Textura {
     
     private final String superficie;
-    private Color ctextura;
     private int corrugado;
 
-    public Textura(String superficie) {
+    public Textura(String superficie, int corrugado) {
         this.superficie = superficie;
+        this.corrugado = corrugado;
     }
 
     public String getSuperficie() {
         return superficie;
     }
    
-    public Color getCtextura() {
-        return ctextura;
-    }
-
-    public void setCtextura(Color ctextura) {
-        this.ctextura = ctextura;
-    }
-
     public int getCorrugado() {
         return corrugado;
     }

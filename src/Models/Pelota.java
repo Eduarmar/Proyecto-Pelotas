@@ -7,7 +7,6 @@ package Models;
 
 /**
  *
- * @author AliRafael
  */
 public class Pelota {
     
@@ -15,12 +14,23 @@ public class Pelota {
     private Medida medida;
     private Etiqueta etiqueta;
     private Nucleo nucleo;
-    private Forma forma;
     private Lineas lineas;
     private Costura costura;
     private Cubierta cubierta;
-           
+
+    public Pelota(String nombre, Medida medida, Nucleo nucleo, Cubierta cubierta) {
+        this.nombre = nombre;
+        this.medida = medida;
+        this.nucleo = nucleo;
+        this.cubierta = cubierta;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
     
+    
+
     public Pelota(String nombre) {
         this.nombre=nombre;
     }
@@ -47,14 +57,6 @@ public class Pelota {
 
     public void setNucleo(Nucleo nucleo) {
         this.nucleo = nucleo;
-    }
-
-    public Forma getForma() {
-        return forma;
-    }
-
-    public void setForma(Forma forma) {
-        this.forma = forma;
     }
 
     public Lineas getLineas() {

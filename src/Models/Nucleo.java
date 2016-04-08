@@ -5,23 +5,32 @@
  */
 package Models;
 
-/**
- *
- * @author AliRafael
- */
+
 public class Nucleo {
     
-    private Material tipo;
+    private String nombre;
+    private Cubierta tipo;
     private int capas;
 
     public Nucleo() {
     }
 
-    public Material getTipo() {
+    public Nucleo(String nombre, Cubierta tipo, int capas) {
+        this.nombre = nombre;
+        this.tipo = tipo;
+        this.capas = capas;
+    }
+       
+    
+    public String getNombre() {
+        return nombre;
+    }
+    
+    public Cubierta getTipo() {
         return tipo;
     }
 
-    public void setTipo(Material tipo) {
+    public void setTipo(Cubierta tipo) {
         this.tipo = tipo;
     }
 

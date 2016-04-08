@@ -5,10 +5,7 @@
  */
 package Models;
 
-/**
- *
- * @author AliRafael
- */
+
 public class Etiqueta {
     
     private String nombre;

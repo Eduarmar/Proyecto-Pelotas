@@ -11,24 +11,39 @@ package Models;
  */
 public class Costura {
     
+    private String nombre;
     private int paneles;
     private float anchopanel;
     private float largopanel;
     private int puntos;
-    private Material mhilo;
-    private Material mpanel;
-    private Textura tpanel;
+    private Cubierta cpanel;
 
     public Costura() {
     }
-    
-    public Costura(int paneles, float anchopanel, float largopanel, int puntos) {
+
+    public Costura(String nombre, int paneles, float anchopanel, float largopanel, int puntos, Cubierta cpanel) {
+        this.nombre = nombre;
         this.paneles = paneles;
         this.anchopanel = anchopanel;
         this.largopanel = largopanel;
         this.puntos = puntos;
+        this.cpanel = cpanel;
     }
 
+    public Cubierta getCpanel() {
+        return cpanel;
+    }
+    
+   
+    
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
     public int getPaneles() {
         return paneles;
     }
@@ -60,31 +75,6 @@ public class Costura {
     public void setPuntos(int puntos) {
         this.puntos = puntos;
     }
-
-    public Material getMhilo() {
-        return mhilo;
-    }
-
-    public void setMhilo(Material mhilo) {
-        this.mhilo = mhilo;
-    }
-
-    public Material getMpanel() {
-        return mpanel;
-    }
-
-    public void setMpanel(Material mpanel) {
-        this.mpanel = mpanel;
-    }
-
-    public Textura getTpanel() {
-        return tpanel;
-    }
-
-    public void setTpanel(Textura tpanel) {
-        this.tpanel = tpanel;
-    }
-    
     
     
     

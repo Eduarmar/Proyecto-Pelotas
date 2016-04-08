@@ -5,16 +5,20 @@
  */
 package Models;
 
-/**
- *
- * @author AliRafael
- */
+
 public class Forma {
     
     private String nombre;
     private float largo;
     private float elipse;
 
+    public Forma(String nombre, float largo) {
+        this.nombre = nombre;
+        this.largo = largo;
+    }
+
+    
+        
     public Forma(String nombre) {
         this.nombre = nombre;
     }

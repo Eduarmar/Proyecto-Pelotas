@@ -6,56 +6,37 @@
 package Models;
 
 
-import java.util.Arrays;
 
-/**
- *
- * @author AliRafael
- */
 public class Lineas {
     
-    private String tipolinea;
-    private final float valorx;
-    private final float valory;
+    private final String tipolinea;
     private final int n;
-    private float [] puntoscortesX;
-    private float [] puntoscortesY;
+    private final float [] puntoscortesX;
+    private final float [] puntoscortesY;
 
-    public Lineas(String tipolinea, float valorx, float valory, int n) {
+    public Lineas(String tipolinea, int n, float[] puntoscortesX, float[] puntoscortesY) {
         this.tipolinea = tipolinea;
-        this.valorx = valorx;
-        this.valory = valory;
         this.n = n;
-        
-        this.puntoscortesX= new float[n];
-        this.puntoscortesY= new float[n];
-        
-        Arrays.fill(this.puntoscortesX, 0);
-        Arrays.fill(this.puntoscortesY, 0);
+        this.puntoscortesX = puntoscortesX;
+        this.puntoscortesY = puntoscortesY;
     }
 
     public String getTipolinea() {
         return tipolinea;
     }
 
-    public void setTipolinea(String tipolinea) {
-        this.tipolinea = tipolinea;
+    public int getN() {
+        return n;
     }
 
-    public float getValorx() {
-        return valorx;
+    public float[] getPuntoscortesX() {
+        return puntoscortesX;
     }
 
-    public float getValory() {
-        return valory;
+    public float[] getPuntoscortesY() {
+        return puntoscortesY;
     }
 
-    public void setPuntoscortesX(float[] puntoscortesX) {
-        this.puntoscortesX = puntoscortesX;
-    }
 
-    public void setPuntoscortesY(float[] puntoscortesY) {
-        this.puntoscortesY = puntoscortesY;
-    }
-
+    
 }
